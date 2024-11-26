@@ -10,8 +10,8 @@ const config: HardhatUserConfig = {
       url: "https://rpc.testnet.citrea.xyz",
       accounts: [`${PRIVATE_KEY}`],
     },
-    swisstronik: {
-      url: "https://json-rpc.testnet.swisstronik.com/",
+    bera: {
+      url: "https://bartio.rpc.berachain.com/",
       accounts: [`${PRIVATE_KEY}`],
     },
   },
