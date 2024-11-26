@@ -25,12 +25,12 @@ export const sleep = async (n: number) =>
 
     await mintErc20Tx.wait();
 
-    const burnErc20Tx = await erc20Deployed.transfer(
+    const transferErc20Tx = await erc20Deployed.transfer(
       deployer.address,
       parseEther("100")
     );
 
-    await burnErc20Tx.wait();
+    await transferErc20Tx.wait();
 
     const output = {
       contract: {
@@ -38,7 +38,7 @@ export const sleep = async (n: number) =>
       },
       tx: {
         mintErc20: mintErc20Tx.hash,
-        burnErc20Tx: burnErc20Tx.hash,
+        transferErc20Tx: transferErc20Tx.hash,
       },
     };
 
