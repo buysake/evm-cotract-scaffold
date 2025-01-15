@@ -14,6 +14,10 @@ const config: HardhatUserConfig = {
       url: "https://bartio.rpc.berachain.com/",
       accounts: [`${PRIVATE_KEY}`],
     },
+    ink: {
+      url: "https://rpc-gel.inkonchain.com",
+      accounts: [`${PRIVATE_KEY}`],
+    },
   },
 };
 
