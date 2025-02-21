@@ -18,6 +18,11 @@ const config: HardhatUserConfig = {
       url: "https://rpc-gel.inkonchain.com",
       accounts: [`${PRIVATE_KEY}`],
     },
+    nexus: {
+      url: "https://rpc.nexus.xyz/http",
+      chainId: 392,
+      accounts: [`${PRIVATE_KEY}`],
+    },
   },
 };
 
